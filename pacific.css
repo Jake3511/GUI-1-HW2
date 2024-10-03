@@ -1,0 +1,156 @@
+/*
+	File: pacific.css
+	GUI Assignment: Homework 2, Style a Site with External CSS
+	Jake Shick, UMass Lowell Computer Science, jake_shick@student.uml.edu
+	Copyright (c) 2024 by Shick. All rights reserved. May be freely copied or
+	excerpted for educational purposes with credit to the author.
+	updated by JS on October 2, 2024 at 11:05 PM.
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+header, body, h1, nav, ul{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("ptrbackground.jpg");
+	background-color: #00569f;
+	color: #666666;
+}
+
+header {
+	grid-area: header;
+	font-size: large;
+	color: white;
+	background-image: url("sunset.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 70px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#wrapper {
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 90vh;
+	min-width: 600px;
+	grid-template-areas:
+		"header header"
+		"sidebar content"
+		"footer footer"
+	;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 70px 1fr 50px;
+	margin-bottom: 50px;
+	width: 80%;
+	display: grid;
+	background-color: white;
+	border: black;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 20px;
+	position: relative;
+}
+
+p {
+	overflow: hidden;
+	padding-left: 50px;
+}
+
+nav {
+	grid-area: sidebar;
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+	grid-row: 2 / 4;
+    z-index: 2;
+	background-color: rgb(136, 210, 234);
+}
+
+nav a {
+	text-decoration: none;
+	color:#000033;
+	font-weight: bold;
+}
+nav ul {
+	color:#000033;
+	list-style-type: none;
+	margin-top: 20px;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 1.2em;
+}
+nav a:visited {
+	color: #344873;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+li {
+	text-decoration: none;
+}
+
+.resort {
+    color: #00569f;
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#content ul {
+	list-style-position: inside;
+    list-style-type: none;
+    list-style-image: url('marker.gif');
+	padding-inline-start: 55%;
+	margin-bottom: 10px;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+	font-weight: bold;
+	font-size: 200%;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	padding-inline-start: 55%;
+	font-size: 90%;
+	
+}
+dt {
+	color: #000033;
+}
+
+#content {
+	margin-left: 30px;
+}
+
+img {
+	float:left;
+	width: 50%;
+	height: 50%;
+}
+
+footer {
+	font-style: italic;
+	grid-area: footer;
+    height: 50px;
+    color: #666666;
+    font-family: Georgia, "Times New Roman", serif;
+	position: absolute;
+	left: 22%;
+	bottom: 10px;
+}
+
